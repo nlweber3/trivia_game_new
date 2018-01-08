@@ -1,0 +1,50 @@
+h1 {
+	font-family: 'Indie Flower', cursive;
+	color: white;
+	font-size: 75px;
+	text-align: center;
+	border: 2px solid white;
+	margin-top: 20px;
+	background: black;
+	padding-top: 5px;
+}
+body {
+	background-image: url(./images/question_mark.jpg);
+	background-size: cover;
+}
+#main_div {
+	margin-top: 100px;
+}
+#start_button {
+	background: black;
+}
+#main_div {
+	font-family: 'Indie Flower', cursive;
+	color:white;
+	font-size: 25px;
+}
+#answer_div {
+	font-family: 'Indie Flower', cursive;
+	color:white;
+	font-size: 25px;
+}
+#answer_div {
+	text-align: center;
+	align-content: center;
+}
+#choices_div {
+	margin: 0 auto;
+	color: white;
+	font-family:'Indie Flower', cursive;
+	font-size: 25px;
+}
+#next_div {
+	margin: 0 auto;
+	margin-top: 10px;
+}
+#next_button {
+	font-family: 'Indie Flower', cursive;
+	background: black;
+	font: white;
+	font-size: larger;
+}
