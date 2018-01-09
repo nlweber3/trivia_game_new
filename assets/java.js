@@ -36,11 +36,11 @@ var questions = [{
 
 var timer;
 var userGuess;
-var correctAnswer = 0;
+var rightAnswer = 0;
 var incorrectAnswer = 0;
 var unAnswered = 0;
-var choicesArr = questions[0]["answers"];
 var currentQuestion = 0;
+var choicesArr = questions[currentQuestion]["answers"];
 var gameCounter = 30;
 var currentAnswers = 0;
 
@@ -63,7 +63,7 @@ $("#start_button").click(function() {
 	$("#next_button").show();
 	$("#main_div").html(questions[currentQuestion]["question"]);
 
-	for (let i = 0; i < choicesArr.length; i++) {
+	for (let i = currentQuestion; i < choicesArr.length; i++) {
 		var button = $('<button>');
 		button.text(choicesArr[i]);
 		button.attr('data-id', i);
@@ -78,17 +78,17 @@ $("#start_button").click(function() {
 
 		} else if (userPick === questions[currentQuestion]["correctAnswer"]) {
 			$("#choices_div").hide();
-			correctAnswer++;
+			rightAnswer++;
 
 		}
 		$("#next_button").click(function() {
 			currentQuestion = currentQuestion + 1;
-			choicesArr++;
 			$("#choices_div").show();
 			$("#main_div").html(questions[currentQuestion]["question"]);
 
+
 		});
-		$("#correct").text(correctAnswer);
+		$("#correct").text(rightAnswer);
 		$("#incorrect").text(incorrectAnswer);
 	});
 
