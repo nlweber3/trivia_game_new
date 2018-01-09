@@ -22,15 +22,15 @@ var questions = [{
 }, {
 	question: "Which musician did not die at age 27?",
 	answers: ["Kurt Cobain", "Jimi Hendrix", "Jim Morrison", "Bob Marley"],
-	correctAnswer: "Bob Marley",
+	correctAnswer: "3",
 }, {
 	question: "In what year did Metallica release the And Justice For All album?",
 	answers: ["1988", "2001", "1995", "1977"],
-	correctAnswer: "1988",
+	correctAnswer: "0",
 }, {
 	question: "In the HBO series Game of Thrones, who is referred to as the unburnt?",
 	answers: ["Daenerys Targaryen" , "Tywin Lannister", "Roose Bolton", "Stannis Baratheon "],
-	correctAnswer: "Daenerys Targaryen",
+	correctAnswer: "0",
 }];
 
 
