@@ -48,3 +48,18 @@ body {
 	font: white;
 	font-size: larger;
 }
+#correct_guess {
+	color: white;
+	font-size: 30px;
+}
+#wrong_guess {
+	color: white;
+	font-size: 30px;
+	margin-left: 100px;
+}
+#incorrect {
+	margin-left: 100px;
+}
+#correct {
+	margin-left: 80px;
+}
