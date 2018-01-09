@@ -49,10 +49,12 @@ body {
 	font-size: larger;
 }
 #correct_guess {
+	font-family: Impact, Charcoal, sans-serif;
 	color: white;
 	font-size: 30px;
 }
 #wrong_guess {
+	font-family: Impact, Charcoal, sans-serif;
 	color: white;
 	font-size: 30px;
 	margin-left: 100px;
@@ -62,4 +64,7 @@ body {
 }
 #correct {
 	margin-left: 80px;
+}
+#timer {
+	color: white;
 }

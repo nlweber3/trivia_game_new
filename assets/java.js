@@ -48,14 +48,15 @@ var currentAnswers = 0;
 
 $("#next_button").hide();
 
-function countdown()  {
-	gameCounter--;
-	$("#counter-number").html(game.counter);
-	if (gameCounter === 0) {
-		console.log("TIMES UP");
-		game.done();
-	}
-}
+// 	$(document).ready(function() {
+// 	gameCounter--;
+// 	$("#timer").text(gameCounter);
+// 	if (gameCounter === 0) {
+// 		console.log("TIMES UP");
+// 		game.done();
+// 	}
+// });
+
 
 $("#start_button").click(function() {
 	$("#start_button").hide();
@@ -82,7 +83,8 @@ $("#start_button").click(function() {
 		}
 		$("#next_button").click(function() {
 			currentQuestion = currentQuestion + 1;
-			choicesArr = choicesArr + 1;
+			choicesArr++;
+			$("#choices_div").show();
 			$("#main_div").html(questions[currentQuestion]["question"]);
 
 		});
